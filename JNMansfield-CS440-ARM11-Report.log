@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.6)  8 JUN 2013 00:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.6)  8 JUN 2013 01:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1199,17 +1199,17 @@ Overfull \hbox (22.74974pt too wide) in paragraph at lines 312--313
  []
 
 [9]
-Overfull \hbox (95.2439pt too wide) in paragraph at lines 396--397
+Overfull \hbox (95.2439pt too wide) in paragraph at lines 399--400
 [][]
  []
 
 
-Overfull \hbox (95.2439pt too wide) in paragraph at lines 450--451
+Overfull \hbox (95.2439pt too wide) in paragraph at lines 456--457
 [][]
  []
 
 
-Overfull \hbox (95.2439pt too wide) in paragraph at lines 507--508
+Overfull \hbox (95.2439pt too wide) in paragraph at lines 516--517
 [][]
  []
 
@@ -1218,9 +1218,9 @@ Overfull \hbox (95.2439pt too wide) in paragraph at lines 507--508
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.509 \end{figure}
+l.518 \end{figure}
                   ]
-Overfull \hbox (95.2439pt too wide) in paragraph at lines 587--588
+Overfull \hbox (95.2439pt too wide) in paragraph at lines 599--600
 [][]
  []
 
@@ -1229,20 +1229,20 @@ Overfull \hbox (95.2439pt too wide) in paragraph at lines 587--588
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.590 
+l.602 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 0.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.590 
+l.602 
       ]
-Overfull \hbox (95.2439pt too wide) in paragraph at lines 670--671
+Overfull \hbox (95.2439pt too wide) in paragraph at lines 686--687
 [][]
  []
 
 
-Overfull \hbox (95.2439pt too wide) in paragraph at lines 751--752
+Overfull \hbox (95.2439pt too wide) in paragraph at lines 771--772
 [][]
  []
 
@@ -1251,34 +1251,34 @@ Overfull \hbox (95.2439pt too wide) in paragraph at lines 751--752
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.753 \end{figure}
+l.773 \end{figure}
                   ] [13pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.0.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.754 \clearpage
+l.774 \clearpage
                 ] [14pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.0.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.754 \clearpage
+l.774 \clearpage
                 ]
-Overfull \hbox (8.05196pt too wide) in paragraph at lines 756--756
+Overfull \hbox (8.05196pt too wide) in paragraph at lines 776--776
 [][]\OT1/cmr/m/it/10.95 ARM Ar-chi-tec-ture Ref-er-ence Man-ual ARMv7-A and ARM
 v7-R edi-tion \OT1/cmr/m/n/10.95 (2011).
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 757.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 777.
 [15
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 757.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 777.
  (./JNMansfield-CS440-ARM11-Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 757.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 757.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 777.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 777.
 Package rerunfilecheck Info: File `JNMansfield-CS440-ARM11-Report.out' has not 
 changed.
 (rerunfilecheck)             Checksum: 67378470CB3FD721C92F705A53CC2AEA;595.
@@ -1286,13 +1286,13 @@ Package logreq Info: Writing requests to 'JNMansfield-CS440-ARM11-Report.run.xm
 l'.
 \openout1 = `JNMansfield-CS440-ARM11-Report.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 757.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 777.
  ) 
 Here is how much of TeX's memory you used:
- 23522 strings out of 493485
- 424780 string characters out of 3143527
- 758968 words of memory out of 3000000
- 26369 multiletter control sequences out of 15000+200000
+ 23541 strings out of 493485
+ 425013 string characters out of 3143527
+ 769196 words of memory out of 3000000
+ 26388 multiletter control sequences out of 15000+200000
  11409 words of font info for 40 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,10n,69p,956b,1815s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1309,7 +1309,7 @@ s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on JNMansfield-CS440-ARM11-Report.pdf (16 pages, 222701 bytes).
+Output written on JNMansfield-CS440-ARM11-Report.pdf (16 pages, 226872 bytes).
 PDF statistics:
  307 PDF objects out of 1000 (max. 8388607)
  256 compressed objects within 3 object streams

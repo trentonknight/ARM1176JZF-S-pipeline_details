@@ -335,6 +335,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[box3] (bx3) at (-4,0){Instruction decode};
 \node[stage] (s4) at (-2,1.5){Iss};
 \node[box4] (bx4) at (-2,0){Reg.read and issue};
+\node[stage] (e1) at (0,2){Ex1};
+\node[stage] (e2) at (2,2){Ex2};
+\node[stage] (e3) at (4,2){Ex3};
 \node[stage] (s5) at (0,1.5){Sh};
 \node[box1] (bx5) at (0,0){Shifter stage};
 \node[stage] (s6) at (2,1.5){ALU};
@@ -344,11 +347,11 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[stage] (s8) at (6,1.5){WBex};
 \node[box4] (bx8) at (6,0){Writeback Mul/ALU};
 %Row Two
-\node[stage2] (s2_1) at (0,-1){MAC1};
+\node[stage] (s2_1) at (0,-1){MAC1};
 \node[box1] (r2bx1) at (0,-2){1st multiply\\acc. stage};
-\node[stage2] (s2_2) at (2,-1){MAC2};
+\node[stage] (s2_2) at (2,-1){MAC2};
 \node[box2] (r2bx2) at (2,-2){2nd multiply\\acc. stage};
-\node[stage2] (s2_3) at (4,-1){MAC3};
+\node[stage] (s2_3) at (4,-1){MAC3};
 \node[box3] (r2bx3) at (4,-2){3rd multiply\\acc. stage};
 %Row Three
 \node[stage] (s3_1) at (0,-3.5){ADD};
@@ -408,6 +411,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[arrow1](ar6) at ( 3,-1){};
 \node[arrow1](ar7) at ( 5,-1){};
 %Row One
+\node[stage] (e1) at (0,2){Ex1};
+\node[stage] (e2) at (2,2){Ex2};
+\node[stage] (e3) at (4,2){Ex3};
 \node[stage] (s1) at (-8,1.5){Fe1};
 \node[box1] (bx1) at (-8,0){1st fetch stage};
 \node[stage] (s) at (-6,1.5){Fe2};
@@ -463,6 +469,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[arrow5](ar7) at (5.5,-1.6){};
 
 %Row One
+\node[stage] (e1) at (0,.5){Ex1};
+\node[stage] (e2) at (2,.5){Ex2};
+\node[stage] (e3) at (4,.5){Ex3};
 \node[stage] (s1) at (-8,1.5){Fe1};
 \node[box1] (bx1) at (-8,0){1st fetch stage};
 \node[stage] (s) at (-6,1.5){Fe2};
@@ -474,13 +483,13 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[stage] (s8) at (6,1.5){WBex};
 \node[box4] (bx8) at (6,0){Writeback Mul/ALU};
 %Row Two
-\node[stage2] (s2_1) at (0,-1){MAC1};
+\node[stage] (s2_1) at (0,-1){MAC1};
 \node[box1] (r2bx1) at (0,-2){1st multiply\\acc. stage};
-\node[stage2] (s2_2) at (2,-1){MAC2};
+\node[stage] (s2_2) at (2,-1){MAC2};
 \node[box2] (r2bx2) at (2,-2){2nd multiply\\acc. stage};
 %arrow
 \draw[->, color=green, very thick, dashed] (s2_2) to [bend right=45] (s2_1);
-\node[stage2] (s2_3) at (4,-1){MAC3};
+\node[stage] (s2_3) at (4,-1){MAC3};
 \node[box3] (r2bx3) at (4,-2){3rd multiply\\acc. stage};
 %background
 \begin{scope}[on background layer]
@@ -525,6 +534,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[arrow3](ar9) at (5,-5.3){}; 
 
 %Row One
+\node[stage] (e1) at (0,2){Ex1};
+\node[stage] (e2) at (2,2){Ex2};
+\node[stage] (e3) at (4,2){Ex3};
 \node[stage] (s1) at (-8,1.5){Fe1};
 \node[box1] (bx1) at (-8,0){1st fetch stage};
 \node[stage] (s) at (-6,1.5){Fe2};
@@ -606,6 +618,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 
 
 %Row One
+\node[stage] (e1) at (0,2){Ex1};
+\node[stage] (e2) at (2,2){Ex2};
+\node[stage] (e3) at (4,2){Ex3};
 \node[stage] (s1) at (-8,1.5){Fe1};
 \node[box1] (bx1) at (-8,0){1st fetch stage};
 \node[stage] (s) at (-6,1.5){Fe2};
@@ -628,10 +643,11 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \draw[->, color=green, very thick, dashed] (s3_1) to (0,-2.5) to (.5,-2.5) to (.5,-3.4);
 \node[stage] (s3_2) at (2,-3.5){DC1};
 \node[box2] (r3bx2) at (2,-4.5){Data cache 1};
-\node[box5] (r3bx2) at (2,-6.5){Not used unless a miss occurs};
 \node[stage] (s3_3) at (4,-3.5){DC2};
 \node[box3] (r3bx3) at (4,-4.5){Data cache 2};
 \node[stage] (s3_4) at (6,-3.5){WBIs};
+\node[stage] (s3_4) at (2,-6.5){hit under miss};
+\node[box5] (r3bx2) at (2,-7.7){used only in event of a miss};
 \node[box4] (r3bx4) at (6,-4.5){Writeback from LSU};
 %background
 \begin{scope}[on background layer]
@@ -688,32 +704,36 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 
 
 %Row One
-\node[stage] (s1) at (-8,1.5){Fe1};
+\node[stage] (e1) at (0,2){Ex1};
+\node[stage] (e2) at (2,2){Ex2};
+\node[stage] (e3) at (4,2){Ex3};
+\node[stage] (s1) at (-8,1.5){Fe1: 1};
 \node[box1] (bx1) at (-8,0){1st fetch stage};
-\node[stage] (s) at (-6,1.5){Fe2};
+\node[stage] (s) at (-6,1.5){Fe2: 2};
 \node[box2] (bx2) at (-6,0){2nd fetch stage};
-\node[stage] (s3) at (-4,1.5){De};
+\node[stage] (s3) at (-4,1.5){De: 3};
 \node[box3] (bx3) at (-4,0){Instruction decode};
-\node[stage] (s4) at (-2,1.5){Iss};
+\node[stage] (s4) at (-2,1.5){Iss: 4};
 \node[box4] (bx4) at (-2,0){Reg.read and issue};
-\node[stage] (s5) at (0,1.5){Sh};
+\node[stage] (s5) at (0,1.5){Sh: 5};
 \node[box1] (bx5) at (0,0){Shifter stage};
-\node[stage] (s6) at (2,1.5){ALU};
+\node[stage] (s6) at (2,1.5){ALU: 6};
 \node[box2] (bx6) at (2,0){ALU\\operation};
-\node[stage] (s7) at (4,1.5){Sat};
+\node[stage] (s7) at (4,1.5){Sat: 7};
 \node[box3] (bx7) at (4,0){Saturation stage};
-\node[stage] (s8) at (6,1.5){WBex};
+\node[stage] (s8) at (6,1.5){WBex: 8};
 \node[box4] (bx8) at (6,0){Writeback Mul/ALU};
 %Row Three
-\node[stage] (s3_1) at (0,-3.5){ADD};
+\node[stage] (s3_1) at (0,-3.5){ADD: 5};
 \node[box1] (r3bx1) at (0,-4.5){Address generation};
-\node[stage] (s3_2) at (2,-3.5){DC1};
+\node[stage] (s3_2) at (2,-3.5){DC1: 6};
 \node[box2] (r3bx2) at (2,-4.5){Data cache 1};
-\node[stage] (s3_3) at (4,-3.5){DC2};
+\node[stage] (s3_3) at (4,-3.5){DC2:11};
 \node[box3] (r3bx3) at (4,-4.5){Data cache 2};
-\node[stage] (s3_4) at (6,-3.5){WBIs};
+\node[stage] (s3_4) at (6,-3.5){WBIs: 12};
 \node[box4] (r3bx4) at (6,-4.5){Writeback from LSU};
-\node[box5] (r3bx2) at (2,-6.5){Loaded};
+\node[stage] (s3_4) at (2,-6.5){hit under miss: 9, 10};
+\node[box5] (r3bx2) at (2,-7.7){Loaded!};
 %background
 \begin{scope}[on background layer]
 \fill[black!50](-9,-1) rectangle(-5,1);
