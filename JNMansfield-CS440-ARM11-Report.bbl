@@ -1,0 +1,115 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% $ biber version 0.9.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber or bibtex as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \entry{A32}{misc}{}
+    \list{organization}{1}{%
+      {ARM Limited}%
+    }
+    \field{sortinit}{A}
+    \field{labelyear}{2013}
+    \field{title}{A32(ARM)}
+    \field{year}{2013}
+    \verb{url}
+    \verb http://www.arm.com/products/processors/instruction-set-architectures/index.php
+    \endverb
+  \endentry
+
+  \entry{referenceB}{misc}{}
+    \list{organization}{1}{%
+      {ARM Limited}%
+    }
+    \field{sortinit}{A}
+    \field{labelyear}{2011}
+    \field{title}{ARM Architecture Reference Manual ARMv7-A and ARMv7-R edition}
+    \field{year}{2011}
+    \verb{url}
+    \verb http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0406b/index.html
+    \endverb
+  \endentry
+
+  \entry{arm1176jzf-s}{misc}{}
+    \list{organization}{1}{%
+      {ARM Limited}%
+    }
+    \field{sortinit}{d}
+    \field{labelyear}{2009}
+    \field{note}{ARM1176JZF-S Technical Reference Manual}
+    \field{title}{ddi0301h}
+    \field{year}{2009}
+    \verb{url}
+    \verb http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0301h/index.html
+    \endverb
+  \endentry
+
+  \entry{kamath2001system}{article}{}
+    \name{labelname}{2}{}{%
+      {{uniquename=0,hash=4a86c782cdd0859a17749516c588e2d9}{Kamath}{K\bibinitperiod}{Udaya}{U\bibinitperiod}{}{}{}{}}%
+      {{uniquename=0,hash=98eadc2459268eb4a101a13f9ba4124f}{Kaundin}{K\bibinitperiod}{Rajita}{R\bibinitperiod}{}{}{}{}}%
+    }
+    \name{author}{2}{}{%
+      {{uniquename=0,hash=4a86c782cdd0859a17749516c588e2d9}{Kamath}{K\bibinitperiod}{Udaya}{U\bibinitperiod}{}{}{}{}}%
+      {{uniquename=0,hash=98eadc2459268eb4a101a13f9ba4124f}{Kaundin}{K\bibinitperiod}{Rajita}{R\bibinitperiod}{}{}{}{}}%
+    }
+    \strng{namehash}{f1bca78557b117b85430955da2976d39}
+    \strng{fullhash}{f1bca78557b117b85430955da2976d39}
+    \field{sortinit}{K}
+    \field{labelyear}{2001}
+    \field{journaltitle}{White Paper, June}
+    \field{title}{System-on-Chip Designs}
+    \field{year}{2001}
+  \endentry
+
+  \entry{levy2005history}{article}{}
+    \name{labelname}{2}{}{%
+      {{uniquename=0,hash=b4286ab71eded6ab864704159f92017d}{Levy}{L\bibinitperiod}{Markus}{M\bibinitperiod}{}{}{}{}}%
+      {{uniquename=0,hash=fdaa1d20ce42a8d68ed05fa308bbcf47}{Promotions}{P\bibinitperiod}{Convergence}{C\bibinitperiod}{}{}{}{}}%
+    }
+    \name{author}{2}{}{%
+      {{uniquename=0,hash=b4286ab71eded6ab864704159f92017d}{Levy}{L\bibinitperiod}{Markus}{M\bibinitperiod}{}{}{}{}}%
+      {{uniquename=0,hash=fdaa1d20ce42a8d68ed05fa308bbcf47}{Promotions}{P\bibinitperiod}{Convergence}{C\bibinitperiod}{}{}{}{}}%
+    }
+    \strng{namehash}{12d162f80b826cf6a07037493ac1116b}
+    \strng{fullhash}{12d162f80b826cf6a07037493ac1116b}
+    \field{sortinit}{L}
+    \field{labelyear}{2005}
+    \field{journaltitle}{ARM IQ}
+    \field{number}{1}
+    \field{title}{The history of the ARM architecture: From inception to IPO}
+    \field{volume}{4}
+    \field{year}{2005}
+  \endentry
+
+  \entry{ARM1176}{misc}{}
+    \list{organization}{1}{%
+      {ARM Limited}%
+    }
+    \field{sortinit}{S}
+    \field{labelyear}{2013}
+    \field{title}{Specifications}
+    \field{year}{2013}
+    \verb{url}
+    \verb http://www.arm.com/products/processors/classic/arm11/arm1176.php
+    \endverb
+  \endentry
+
+\endrefsection
+\endinput
+

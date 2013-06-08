@@ -1,0 +1,5 @@
+http://johnmacfarlane.net/pandoc/README.html#citation-rendering
+
+pandoc --bibliography=JNMansfield-CS440-ARM11-Report.bib  -o JNMansfield-CS440-ARM11-Report.docx JNMansfield-CS440-ARM11-Report.tex
+
+

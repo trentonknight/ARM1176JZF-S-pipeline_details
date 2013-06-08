@@ -1,0 +1,25 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.1}In the beginning there was Acorn}{2}{section.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.1.1}The need for a smaller silicon area}{2}{subsection.0.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.2}The Instruction Set Architecture}{3}{section.0.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.1}A32}{4}{subsection.0.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ Instruction length and format}{4}{subsection.0.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{General Instruction Categories}{4}{figure.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The Branch Instruction}{5}{figure.0.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The MOV Instruction}{6}{figure.0.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.2}Syntax for using the branch and mov instructions}{7}{subsection.0.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.3}The main components of the ARM1176JZF-S}{8}{section.0.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.3.1}List of components}{8}{subsection.0.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.4}ARM1176JZF-S pipeline stages}{10}{section.0.4}
