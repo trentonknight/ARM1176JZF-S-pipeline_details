@@ -20,6 +20,7 @@
 %tikz stages
 \tikzstyle{stage}=[rectangle, fill=black!90, text=white, rounded corners, text width=1.5cm, text centered,font=\scriptsize,drop shadow]
 \tikzstyle{stage2}=[rectangle, fill=black!10, text=black, rounded corners, text width=1.5cm, text centered,font=\scriptsize,drop shadow]
+\tikzstyle{stage3}=[rectangle, fill=black!90, text=white, rounded corners, text width=6cm, text centered,font=\scriptsize,drop shadow]
 %tikz arrow
 \tikzstyle{arrow1}=[single arrow,draw=none, scale=1,minimum height=1cm, fill=red, drop shadow]
 \tikzstyle{arrow2}=[single arrow,draw=none, scale=1,minimum height=1cm, fill=blue, drop shadow]
@@ -131,6 +132,10 @@ Currently ARMv6 has ISA support for the following~\citep{ARM1176}:
 \item DSP extension
 \item Floating Point Unit
 \end{itemize}
+\begin{doublespace}
+\subsection{state switching}
+The ARM processor allows switching of states using the BX and BLX instructions. The ARM state is 32-bit word-aligned, the Thumb a 16-bit halfword-aligned, and the Jazelle state is variable length, byte aligned for instructions~\citep[2-12]{arm1176jzf-s}.
+\end{doublespace}
 \subsection{A32}
 \begin{doublespace}
 ARM is also known as A32~\citep{A32}. ARMv6 architecture is amongst a few others which use A32 such as ARMv5TEJ and ARMv4T. 
@@ -296,7 +301,7 @@ The following components are considered the main components for the ARM1176JZF-S
 \item Branch prediction
 \item Return Stack
 \end{itemize}
-\item[Load Store Unit (LSU)] The load-store pipeline decouples loads ans stores from the MAC and ALU~\citep[1-11]{arm1176jzf-s}.
+\item[Load Store Unit (LSU)] The load-store pipeline decouples loads and stores from the MAC and ALU~\citep[1-11]{arm1176jzf-s}.
 \item [Prefetch unit] Fetches instructions from the instruction cache, external memory and instruction TCM to predict branch outcomes~\citep[1-11]{arm1176jzf-s}.
 \item [Memory system] The memory system provides the core with features such as virtual indexing, export of memory, memory access control and many other capabilities~\citep[1-12]{arm1176jzf-s}.
 \item [AMBA AXI interface] This bus interface allows high bandwidth connectivity between the processor, second level caches, on-chip RAM, peripherals, and interfaces to external memory~\citep[1-16]{arm1176jzf-s}. 
@@ -320,13 +325,17 @@ The following components are considered the main components for the ARM1176JZF-S
 \end{description}
 \section{ARM1176JZF-S pipeline stages}
 \begin{doublespace}
-The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for each instruction. 
+The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for each instruction. For the following figures 7-12 note that the first 4 stages Fe1, Fe2, De, Iss are considered the \textbf{common decode pipeline}. From the common decode pipeline the direction taken will determine if the instruction will seek a ALU pipeline, Multiply pipeline, or a Load/Store pipeline. 
 \end{doublespace}
 
 \begin{figure}[H]
 \begin{tikzpicture}
 
 %Row One
+\node[stage2,rotate=90](alup) at (7.5,0){ALU pipeline};
+\node[stage2,rotate=90](mulp) at (7.5,-2){Multiply pipeline};
+\node[stage2,rotate=90](lsp) at (7.5,-4){Load/Store pipeline};
+\node[stage3](cdp) at (-5,-1.4){common decode pipeline};
 \node[stage] (s1) at (-8,1.5){Fe1};
 \node[box1] (bx1) at (-8,0){1st fetch stage};
 \node[stage] (s) at (-6,1.5){Fe2};
@@ -411,6 +420,8 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[arrow1](ar6) at ( 3,-1){};
 \node[arrow1](ar7) at ( 5,-1){};
 %Row One
+\node[stage2,rotate=90](alup) at (7.5,0){ALU pipeline};
+\node[stage3](cdp) at (-5,-1.8){common decode pipeline};
 \node[stage] (e1) at (0,2){Ex1};
 \node[stage] (e2) at (2,2){Ex2};
 \node[stage] (e3) at (4,2){Ex3};
@@ -469,6 +480,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[arrow5](ar7) at (5.5,-1.6){};
 
 %Row One
+\node[stage2,rotate=90](alup) at (7.5,0){ALU pipeline};
+\node[stage2,rotate=90](mulp) at (7.5,-2){Multiply pipeline};
+\node[stage3](cdp) at (-5,-1.8){common decode pipeline};
 \node[stage] (e1) at (0,.5){Ex1};
 \node[stage] (e2) at (2,.5){Ex2};
 \node[stage] (e3) at (4,.5){Ex3};
@@ -534,6 +548,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \node[arrow3](ar9) at (5,-5.3){}; 
 
 %Row One
+\node[stage2,rotate=90](alup) at (7.5,0){ALU pipeline};
+\node[stage2,rotate=90](lsp) at (7.5,-4){Load/Store pipeline};
+\node[stage3](cdp) at (-5,-1.8){common decode pipeline};
 \node[stage] (e1) at (0,2){Ex1};
 \node[stage] (e2) at (2,2){Ex2};
 \node[stage] (e3) at (4,2){Ex3};
@@ -618,6 +635,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 
 
 %Row One
+\node[stage2,rotate=90](alup) at (7.5,0){ALU pipeline};
+\node[stage2,rotate=90](lsp) at (7.5,-4){Load/Store pipeline};
+\node[stage3](cdp) at (-5,-1.8){common decode pipeline};
 \node[stage] (e1) at (0,2){Ex1};
 \node[stage] (e2) at (2,2){Ex2};
 \node[stage] (e3) at (4,2){Ex3};
@@ -704,6 +724,9 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 
 
 %Row One
+\node[stage2,rotate=90](alup) at (7.5,0){ALU pipeline};
+\node[stage2,rotate=90](lsp) at (7.5,-4){Load/Store pipeline};
+\node[stage3](cdp) at (-5,-1.8){common decode pipeline};
 \node[stage] (e1) at (0,2){Ex1};
 \node[stage] (e2) at (2,2){Ex2};
 \node[stage] (e3) at (4,2){Ex3};
