@@ -8,7 +8,10 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{listings}
+\usepackage{minted}
+\usemintedstyle{tango}
 \usepackage{mips}
+\usepackage[utf8]{inputenc}
 %tikz stuff
 \usepackage{tikz}
 \usetikzlibrary{shapes,shadows,arrows,backgrounds,positioning}
@@ -48,7 +51,7 @@
   keywordstyle=\color{blue},       % keyword style
   language=Octave,                 % the language of the code
   morekeywords={*,...},            % if you want to add more keywords to the set
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
   numbersep=5pt,                   % how far the line-numbers are from the code
   numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
   rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
@@ -60,6 +63,14 @@
   tabsize=2,                       % sets default tabsize to 2 spaces
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
+%begining external
+\usetikzlibrary{external}
+\tikzset{external/system call={latex \tikzexternalcheckshellescape -halt-on-error
+-interaction=batchmode -jobname "\image" "\texsource";
+dvips -o "\image".ps "\image".dvi;
+ps2eps "\image.ps"}}
+\tikzexternalize
+%end external
 
 \usepackage[backend=biber,
 style=authoryear-comp,
@@ -76,7 +87,7 @@ natbib=true,
 
 \begin{center}
 \textsc{{\LARGE\color{Sepia}{CS440}}}\\[1.5cm]
-\textsc{{\LARGE\color{Bittersweet}{ARM11}}}\\[1.5cm]
+\textsc{{\LARGE\color{Bittersweet}{The ARM1176JZF-S Architecture}}}\\[1.5cm]
 
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
@@ -95,28 +106,28 @@ Prof.~Pamela~\textsc{Smallwood}
 \tableofcontents
 \clearpage
 \section{In the beginning there was Acorn}
-\begin{doublespace}
+\begin{onehalfspace}
 In 1985 the first ARM processor, the Acorn RISC Machine was introduced to the world~\citep{levy2005history}. Later in 1990 the Advanced RISC Machines Ltd.(ARM) would be launched. Unlike other RISC processor vendors of their time ARM began creating small scale processors. A whitepaper~\citep{kamath2001system} from 2001 Strategy made this statement: 
-\end{doublespace}
+\end{onehalfspace}
 \begin{quote}
 At Wipro, significant focus has been on the ARM processor technology, since we believe that will drive the evolving market for embedded applications, mobile devices and next generation information appliances.
 \end{quote}
-\begin{doublespace}
+\begin{onehalfspace}
 Although this insight was probably not difficult to gauge by 2001, the scale at which embedded mobile devices has exploded onto the market has been impressive. Larger corporations, which have not been know for ingenuity, such as Microsoft, have been dealt a massive blow by new mobile devices such as Apples IOS based iPhone and iPad, or the fleets of Android based devices. The need for a smaller architecture has never been greater and ARM is sitting center stage. 
-\end{doublespace}
+\end{onehalfspace}
 \subsection{The need for a smaller silicon area}
-\begin{doublespace}
+\begin{onehalfspace}
 The ARM architecture a \textbf{Reduced Instruction Set Computer} or RISC based architecture is now considered a dominant choice for developers and manufacturers. The ARM architecture incorporates standard RISC features~\citep[A1-2]{referenceB}:
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{itemize}
 \item a large uniform register file.
 \item a load/store architecture, where data-processing operations only operate on register contents, not directly on memory contents.
 \item simple addressing modes, with all load/store addresses being determined from register contents and instruction fields only.
 \end{itemize}
-\begin{doublespace}
+\begin{onehalfspace}
 The ARM architecture has proven to be a better choice for smaller devices due to the low power consumption along with good performance. The \textbf{RM Architecture Reference Manual} listed the following additional reasons ARM is designed for smaller devices~\citep[A1-2]{referenceB}:
-\end{doublespace}
+\end{onehalfspace}
 \begin{itemize}
 \item instructions that combine a shift with an arithmetic or logical operation.
 \item auto-increment and auto-decrement addressing modes to optimize program loops.
@@ -132,16 +143,68 @@ Currently ARMv6 has ISA support for the following~\citep{ARM1176}:
 \item DSP extension
 \item Floating Point Unit
 \end{itemize}
-\begin{doublespace}
+\begin{onehalfspace}
 \subsection{state switching}
 The ARM processor allows switching of states using the BX and BLX instructions. The ARM state is 32-bit word-aligned, the Thumb a 16-bit halfword-aligned, and the Jazelle state is variable length, byte aligned for instructions~\citep[2-12]{arm1176jzf-s}.
-\end{doublespace}
+\subsection{Conditionalised}
+ARM instructions can be whats called conditionalised. If the needs of the condition code are not met the instruction will simply become a NOP:
+\end{onehalfspace}
+
+\begin{figure}[H]
+\rowcolors{1}{gray!10}{brown!10}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|l|}
+\hline
+Condition Code & Meaning\\\hline
+N & Negative condition code, set to 1 if result is negative\\\hline
+Z & Zero condition code, set to 1 if the result of the instruction is 0\\\hline
+C & Carry condition code, set to 1 if the instruction result in a carry condition\\\hline
+V & Overflow condition code, set to 1 if the instruction results in an overflow condition.\\\hline
+\end{tabular}}
+\caption{Conditions}
+\end{figure}
+
+
+\begin{onehalfspace}
+
+\subsection{Conditional codes}
+Conditional Codes mean Conditional execution. The bit [31:28] determine the condition or lack there of:
+\end{onehalfspace}
+
+\begin{center}
+\rowcolors{1}{gray!10}{brown!10}
+\begin{figure}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|}\hline
+cond & mnemonic ext & meaning int & meaning floating point & cond flag\\\hline
+0000 & EQ & Equal & Equal & Z==1\\\hline
+0001 & NE & Not Equal & Not Equal, or unordered & Z==0\\\hline
+0010 & $CS^b$ & Carry set & Greater than, equal, or unordered & C==1\\\hline
+0011 & $CC^c$ & Carry clear & Less than & C==0\\\hline
+0100 & MI & Minus, negative & Less than & N==0\\\hline
+0101 & PL & Plus, positive or zero & Greater than, equal, or unordered & N==0\\\hline
+0110 & VS & Overflow & Unordered & V==1\\\hline
+0111 & VC & No overflow & Not unordered & V==0\\\hline\hline
+1000 & HI & Unsigned higher & Greater than, or unordered & C==1 and Z==0\\\hline
+1001 & LS & Unsigned lower or same & Less than or equal & C==0 and Z==0\\\hline\hline
+1010 & GE & Signed greater than or equal & Greater than or equal & N==V\\\hline
+1011 & LT & Signed less than & Less than, or unordered & N!=V\\\hline
+1100 & GT & Signed greater than & Greater than & Z==0 and N==V\\\hline
+1101 & LE & Signed less than or equal & Less than, equal, or unordered & Z==1 or N!=V\\\hline\hline
+1110 & None $(AL)^d$ & Always(unconditional) & Always(unconditional) & Any\\\hline
+
+\end{tabular}}
+\caption{Conditional Codes}
+\end{figure}
+
+
+\end{center}
 \subsection{A32}
-\begin{doublespace}
+\begin{onehalfspace}
 ARM is also known as A32~\citep{A32}. ARMv6 architecture is amongst a few others which use A32 such as ARMv5TEJ and ARMv4T. 
 \subsubsection{ Instruction length and format}
 ARM instructions are 32-bits wide and have a 4-byte boundary~\citep{A32}. The subdivisions of the ARM instruction set can be seen in the below figure 1~\citep[A5-2]{referenceB}. As you can see each ARM instruction is composed of a 32-bit word. The 32-bit word's subdivisions are determined by bits [31:25,4]. Additionally, the conditional subdivision can be see between bits [31:28]. The conditional field allows for more optimizations.
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{center}
 \rowcolors{1}{gray!10}{brown!10}
@@ -157,9 +220,9 @@ cond & op1 &  & op & \\ \hline
 \end{figure}
 \end{center}
 \subsubsection{General Instruction Categories}
-\begin{doublespace}
-The following figure 2, shown below, illustrates the encoding which defines the various classes of instructions used with ARMv6~\citep[A5-2]{referenceB}:
-\end{doublespace}
+\begin{onehalfspace}
+The following figure 4, shown below, illustrates the encoding which defines the various classes of instructions used with ARMv6~\citep[A5-2]{referenceB}:
+\end{onehalfspace}
 
 \begin{center}
 \rowcolors{1}{gray!10}{brown!10}
@@ -180,9 +243,9 @@ not 1111 & 11x & - & Supervisor Call and coprocessor instructions\\ \hline \hlin
 \end{figure}
 \end{center}
 \subsubsection{The Branch Instruction}
-\begin{doublespace}
-As can be seen in figure 2 op1 determines the instruction class. For example when op1 = 10x one of the various branching or block data transfer instructions is being used. If branch is the instruction specifically being used then 10xxxx will be found between [25:20] as shown in figure 3 below~\citep[A5-27]{referenceB}: 
-\end{doublespace}
+\begin{onehalfspace}
+As can be seen in figure 4 op1 determines the instruction class. For example when op1 = 10x one of the various branching or block data transfer instructions is being used. If branch is the instruction specifically being used then 10xxxx will be found between [25:20] as shown in figure 3 below~\citep[A5-27]{referenceB}: 
+\end{onehalfspace}
 
 \begin{center}
 \rowcolors{1}{gray!10}{brown!10}
@@ -198,9 +261,9 @@ not 1111 & 1~0 & 10xxxx &  & &\\ \hline
 \caption{Branch equals 10xxxx}
 \end{figure}
 \end{center}
-\begin{doublespace}
-Going a step further, the following figure 4 shows the branch instructions details in Encoding A1~\citep[A8-44]{referenceB}.
-\end{doublespace}
+\begin{onehalfspace}
+Going a step further, the following figure 5 shows the branch instructions details in Encoding A1 with no conditions~\citep[A8-44]{referenceB}.
+\end{onehalfspace}
 \begin{center}
 \rowcolors{1}{gray!10}{brown!10}
 \begin{figure}[H] 
@@ -209,18 +272,18 @@ Going a step further, the following figure 4 shows the branch instructions detai
 \hline
 31~30~29~28& 27~26~25~24 & 23~22~21~20~19~18~17~16~15~14~13~12~11~10~9~8~7~6~5~4~3~2~1~0\\
 \hline
-cond & 1~0~1~0& imm24   \\ \hline
+1~1~1~0 & 1~0~1~0& imm24   \\ \hline
 \end{tabular}}
 \caption{imm32 = SignExtend(imm24:'00', 32);}
 \end{figure}
 \end{center}
-\begin{doublespace}
+\begin{onehalfspace}
 Encoding A1 indicates multiples of 4 in the range $-33554432$ to $33554428$. Other encodings such as T1, T2, T3, and T4 have smaller ranges with T1 being the smallest of the permitted offsets. The T1 range is $-256$ to $254$. All other offset ranges besides Encoding A1 are in even numbers, while Encoding A1, shown in figure 4, is in Multiples of 4. ARM encodings are labeled as A1, A2, A3 and so forth, while Thumb encodings are listed as T1, T2, T3 and so forth. Additionally, there are also encodings for ThumbEE which are listed as E1, E2, E3 and so forth~\citep[A8-282]{referenceB}. 
-\end{doublespace}
+\end{onehalfspace}
 \subsubsection{The MOV Instruction}
-\begin{doublespace}
+\begin{onehalfspace}
 Looking back at figure 2 to op1 = 00x you can see the 27th and 26th bit is determined to be both 0 for all instructions defined as data processing and misc. 
-\end{doublespace}
+\end{onehalfspace}
 \begin{center}
 \rowcolors{1}{gray!10}{brown!10}
 \begin{figure}[H] 
@@ -234,9 +297,10 @@ cond & 0~0 & op &op1  &  &op2 &  \\ \hline
 \caption{Data-processing and misc}
 \end{figure}
 \end{center}
-\begin{doublespace}
+
+\begin{onehalfspace}
 One instruction which falls under the category of data processing is the MOV instruction. The following figure demonstrates the use of the MOV instruction in encoding A1~\citep[A8-194]{referenceB}. 
-\end{doublespace}
+\end{onehalfspace}
 
 \begin{center}
 \rowcolors{1}{gray!10}{brown!10}
@@ -251,11 +315,13 @@ cond & 0~0 & 1 & 1~1~0~1 & S & (0)(0)(0)(0) & Rd & imm12  \\ \hline
 \caption{MOV instruction}
 \end{figure}
 \end{center}
+
 \subsection{Syntax for using the branch and mov instructions}
-\begin{doublespace}
+\begin{onehalfspace}
 The aforementioned instructions mov and branch are used in the following manor: 
-\end{doublespace}
-\begin{lstlisting}
+\end{onehalfspace}
+\begin{figure}
+\begin{minted}{gas}
 /*an assembly code example using instruction mov*/
 .global main
 .func main
@@ -263,30 +329,51 @@ The aforementioned instructions mov and branch are used in the following manor:
 main:
      mov r0, #11 /* Put the number eleven in register r0*/
      bx lr
-\end{lstlisting}
-\begin{doublespace}
+\end{minted}
+\caption{mov instruction}
+\end{figure}
+
+\begin{center}
+\rowcolors{1}{gray!10}{brown!10}
+\begin{figure}[H] 
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+31~30~29~28& 27~26 & 25 & 24~23~22~21 & 20 & 19~18~17~16 & 15~14~13~12 & 11~10~9~8~7~6~5~4~3~2~1~0\\
+\hline
+1~1~1~0 & 0~0 & 1 & 1~1~0~1 & 0 & 0~0~0~0 & 0~0~0~0 & 0~0~0~0~0~0~0~0~1~0~1~1  \\ \hline
+\end{tabular}}
+\caption{MOV r0, \#11}
+\end{figure}
+\end{center}
+
+\begin{onehalfspace}
 The below code clip shows a unconditional branch being used:
-\end{doublespace}
-\begin{lstlisting}
+\end{onehalfspace}
+\begin{figure}[H]
+\begin{minted}{gas}
 /*an assembly code example using the unconditional branch instruction*/
 .text
 .global main
 main:
       mov r0, #11
-      b finish/*branch to finish*/
+      b finish /*branch to finish*/
       mov r0, #22
 finish:
       bx lr
+\end{minted}
+\caption{branch instruction}
+\end{figure}
 
-\end{lstlisting}
-\begin{doublespace}
+\rowcolors{1}{gray!10}{brown!10}
+\begin{onehalfspace}
 When the above code is run the second mov instruction will be skipped due to the branch instruction pointing to \textit{finish}.
-\end{doublespace}
+\end{onehalfspace}
 \section{The main components of the ARM1176JZF-S}
-\begin{doublespace}
+\begin{onehalfspace}
 The following components are considered the main components for the ARM1176JZF-S processor~\citep[1-8]{arm1176jzf-s}:
 \subsection{List of components}
-\end{doublespace}
+\end{onehalfspace}
 \begin{description}
 \item[Integer Core] The ARM1176JZF-S processor is built around the ARM11 integer core. Therefore, it is a implementation of the ARMv6 architecture. This architecture handles the following critical items~\citep[1-9]{arm1176jzf-s}:
 \begin{itemize}
@@ -324,9 +411,16 @@ The following components are considered the main components for the ARM1176JZF-S
 \end{itemize}
 \end{description}
 \section{ARM1176JZF-S pipeline stages}
-\begin{doublespace}
-The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for each instruction. For the following figures 7-12 note that the first 4 stages Fe1, Fe2, De, Iss are considered the \textbf{common decode pipeline}. From the common decode pipeline the direction taken will determine if the instruction will seek a ALU pipeline, Multiply pipeline, or a Load/Store pipeline. 
-\end{doublespace}
+\begin{onehalfspace}
+\subsection{The Common Decode Pipeline}
+The datapath for the ARM1176JZF-S consists of three pipelines. Each of these pipelines are composed of eight stages.
+\begin{itemize}
+\item ALU, Shift and Sat pipeline
+\item MAC pipeline, also called the Multiply pipeline.
+\item Load/Store pipeline
+\end{itemize}
+The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for each instruction. The following figure 11 illustrates the first 4 stages; Fe1, Fe2, De, Iss are considered the \textbf{common decode pipeline}. From the common decode pipeline the direction taken will be one of three, four step pipelines; The ALU pipeline, Multiply pipeline, or a Load/Store pipeline.
+\end{onehalfspace}
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -406,8 +500,82 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \end{scope}
 
 \end{tikzpicture}
+
 \caption{ARM1176JZF-S pipeline stages}
 \end{figure}
+\begin{onehalfspace}
+\subsection{Fetch stages 1 and 2}
+\subsubsection{branch prediction}
+The first question you may ask is why two fetch stages? One reason is to provide time for conversion of a virtual address to a physical address. Beyond the integer core pipeline there is also a separate prefetch unit inside the core. The prefetch unit performs dynamic branch prediction. Branch prediction enables the detection of instructions before they enter the integer core~\citep[5-4]{arm1176jzf-s}.
+\subsubsection{instruction fetch}
+The first stage of instruction fetch deals with memory. Fe1 handles address issuing to memory and data returns from memory~\citep[1-26]{arm1176jzf-s}. If branch prediction handles instructions ahead of the fetch stages, the fetch stage can handle up to four instructions. Instruction fetches are single-copy atomic~\citep{arm7}:
+\end{onehalfspace}
+\begin{itemize}
+\item 32-bit granularity in ARM state.
+\item 16-bit granularity in Thumb and ThumbEE states.
+\item 8-bit granularity in Jazelle state. 
+\end{itemize}
+\subsection{Instruction Issue and Decode}
+\begin{onehalfspace}
+The decode stage literally decodes data by extracting it from register addresses from the current instruction. The Issue and decode stages can contain any instruction in parallel with a predicted branch. 
+\subsubsection{the coprocessor and the cores relationship}
+The coprocessor interface also has a decode stage which is passed directly from the core. Unlike, the core pipeline the coprocessor does not contain the fetch stages and instead begins with a instruction queue and decoder. The core does not discriminate between coprocessor related instructions or non-coprocessor instructions. Therefore, the coprocessor must react immediately with decoding~\citep[11-14]{arm1176jzf-s}. Other complexities are involved as the core may decide, after passing an instruction, to later cancel the previously passed instruction. For this reason the coprocessor maintains a cancel queue. The coprocessor is directed by the core to cancel the previous instruction by the signal \textbf{ACPCANCEL}. Upon the discovery of the ACPCANCEL signal the coprocessor removes the canceled instruction; the cancellation is handled during the Ex1 stage before moving to Ex2. This is only one small example of the many tasks the coprocessor handles.
+\end{onehalfspace}
+\section{Instruction Execution Pipeline }
+\begin{onehalfspace}
+Past the Common Decode Pipeline is the Instruction Execution Pipeline. Each of these pipelines ALU, Multiply, and Load \& Store are composed of four stages, the same as the Common Decode Pipeline. Taking a look at the Program Counter register or R15 we can evaluate when a instruction has reached execution. The 32-bit ARM instructions can be read as the PC + 8, the 16-bit Thumb instructions as PC + 4~\citep[A2-11]{arm7}. The following example of a GDB session demonstrates the registry \textbf{pc} position in relation to execution:
+\end{onehalfspace}
+\begin{figure}[H]
+\begin{minted}{gas}
+.text
+.global main
+main:
+      MOV r0, #5
+      MOV r1, #10
+      MUL r2, r1, r0
+finish:
+      bx lr
+\end{minted}
+\caption{32-bit ARM assembly code}
+\end{figure}
+\begin{figure}[H]
+\begin{minted}{gdb}
+(gdb) info reg
+r0             0x1	1
+r1             0xbefff7d4	3204446164
+r2             0xbefff7dc	3204446172
+r3             0x8390	33680
+r4             0x0	0
+r5             0x0	0
+r6             0x82e4	33508
+r7             0x0	0
+r8             0x0	0
+r9             0x0	0
+r10            0xb6fff000	3070226432
+r11            0x0	0
+r12            0xb6fc1000	3069972480
+sp             0xbefff688	0xbefff688
+lr             0xb6ead81c	-1226123236
+pc             0x8390	0x8390 <main>
+cpsr           0x60000010	1610612752
+(gdb) disas
+Dump of assembler code for function main:
+=> 0x00008390 <+0>:	mov	r0, #5        EXECUTE
+   0x00008394 <+4>:	mov	r1, #10       DECODE
+   0x00008398 <+8>:	mul	r2, r1, r0    FETCH
+End of assembler dump.
+
+\end{minted}
+\caption{GDB}
+\end{figure}
+\begin{onehalfspace}
+As you can see the \textbf{pc} registry is pointed to the current instruction for execution at address $0x00008390$. Here is another exciting fact, you are looking at the entire fetch, decode and execute cycle right now. As you may have noticed I have appended the text, EXECUTE, DECODE and FETCH to the assembler dump made by the disassemble command.  
+\end{onehalfspace}
+\subsection{The Shift, ALU and Sat pipeline}
+\begin{onehalfspace}
+The Shift, ALU and Sat pipeline handles the majority of ALU type operations~\citep[1-10]{arm1176jzf-s}. Additionally, the ARM1176JZF-S uses a 32-bit barrel shifter which works with a second operand before it enters the ALU.
+\end{onehalfspace}
+
 %begin ALU operation
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -467,6 +635,55 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \end{tikzpicture}
 \caption{ARM1176JZF-S ALU Operation}
 \end{figure}
+
+\subsubsection{Shift}
+\begin{onehalfspace}
+The shift stage pertains to the full barrel shifter~\citep{davespace} performing all shifts needed. The barrel shifter is connected to the ALU allowing it to directly pass the second operand after doing its job. A good example of the barrel shift in action is the logical shift left illustrated below:
+\begin{figure}[H]
+\begin{minted}{gas}
+.text
+.global main
+main:
+      movs r0, #2
+      mov r0, r0, LSL #1
+finish:
+      bx lr
+\end{minted}
+\caption{Logical Shift Left ARM 32-bit}
+
+\end{figure}
+In the above example you might notice the LSL is on the tail end of the instruction. This is actually a MOV shifted register. The canonical form or equivalent instruction would be:
+\begin{minted}{trac-wiki}
+LSL{S} <Rd>, <Rm>,#<n>
+\end{minted}
+In fact if you disassemble the above code clip with GDB, the instruction will be seen as the LSL instruction, and not a MOV instruction at all:
+\begin{figure}[H]
+\begin{minted}{gdb}
+(gdb) disas
+Dump of assembler code for function main:
+=> 0x00008390 <+0>:	movs	r0, #2
+   0x00008394 <+4>:	lsl	r0, r0, #1
+End of assembler dump.
+(gdb) x/t 0x00008394
+0x8394 <main+4>:	11100001101000000000000010000000
+\end{minted}
+
+\caption{Logical Shift Left Assembler Dump}
+\end{figure}
+\subsubsection{ALU}
+The ALU handles all arithmetic and logic operations. The ALU also deals with the conditional codes for instructions. The ALU stage is composed of:
+\end{onehalfspace}
+\begin{itemize}
+\item logic unit
+\item arithmetic unit
+\item flag generator
+\end{itemize}
+\subsubsection{Sat}
+\begin{onehalfspace} 
+The Sat stage implements saturation logic needed by various classes of DSP instructions.
+\subsubsection{WBex}
+To complete the ALU pipeline there is a write back to a base register during the WBex stage.
+\end{onehalfspace}
 %begin multiply operation
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -530,7 +747,10 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \end{tikzpicture}
 \caption{ARM1176JZF-S Multiply Operation}
 \end{figure}
-
+\subsection{Multiply pipeline}
+\begin{onehalfspace}
+Unlike MAC2 and MAC3, MAC1, the first stage in the multiply pipeline, can loop until it has passed through the first part of the multiplier array enough times. The second half of the array is dealt with by MAC2 and MAC3 until completion~\citep[1-28]{arm1176jzf-s}. To complete the pipeline a write back is done to the base register. The MAC pipeline executes all of the enhanced multiplication instructions~\citep[1-11]{arm1176jzf-s}. 
+\end{onehalfspace}
 %begin LDR/STR operation
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -616,6 +836,10 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \end{tikzpicture}
 \caption{ARM1176JZF-S LDR/STR operation }
 \end{figure}
+\subsection{The Load/Store pipeline}
+\begin{onehalfspace}
+The Load/Store pipeline consists of the Data address calculation stage followed by two data cache stages. The pipeline completes with a write back of data from the LSU or Load Store Unit. When the processor issues LDM or STM instructions to the LSU, other instructions from the MAC and ALU pipelines run concurrently~\citep[1-11]{arm1176jzf-s}. 
+\end{onehalfspace}
 
 %begin LDM/STM op
 \begin{figure}[H]
@@ -707,6 +931,7 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \caption{ARM1176JZF-S LDM/STM operation}
 \end{figure}
 %LDR that misses below
+
 \begin{figure}[H]
 \begin{tikzpicture}
 %Arrows
@@ -794,9 +1019,71 @@ The ARM1176JZF-S  processor overlaps operations to improve clock rate speed for 
 \end{tikzpicture}
 \caption{ARM1176JZF-S Example LDR miss}
 \end{figure}
+
+
+\subsection{Cycle Timing and Instruction Execution}
+\begin{onehalfspace}
+Both the ALU and Multiply pipelines move together so all instructions finalize at the same moment. Unlike the ALU and Multiply pipelines the load/store pipeline is decoupled and allows the other pipelines to continue afterwards. For example to avoid an instruction from writing to a register before a store multiple has stored that particular register, the register list has a lock latency which determines how many cycles before a write may occur. The ARM1176JZF-S Reference Manual gives this description regarding the use of forwarding~\citep[16-21]{arm1176jzf-s}:
+\end{onehalfspace}
+\begin{quote}
+Extensive forwarding to the Sh, MAC1, ADD, ALU, MAC2, and DC1 stages enables many
+dependent instruction sequences to run without pipeline stalls. General forwarding occurs from
+the ALU, Sat, WBex and WBls pipeline stages. In addition, the multiplier contains an internal
+multiply accumulate forwarding path. Most instructions do not require a register until the ALU
+stage. All result latencies are given as the number of cycles until the register is required by a
+following instruction in the ALU stage
+\end{quote}
+\begin{onehalfspace}
+\subsubsection{Use of Flags and Condition codes}
+According to the ARM1176JZF-S Reference Manual most instructions will execute within one or two cycles unless failing their condition codes. A specific algorithm is given by the manual for determining the number of cycles for multicycle instructions that have a failed condition code~\citep[16-4]{arm1176jzf-s}:
+\end{onehalfspace}
+\[
+Min(NonFailingCycleCount, Max(5 - FlagCycleDistance, 3))
+\]
+\begin{onehalfspace}
+The \textbf{NonFailingCycleCount} variable shown above is the number of cycles the same instruction will take when it passes. The \textbf{FlagCycleDistance} is the distance between two instructions. The first instruction is the flag setter and the second the conditional instruction which relies on it. A good example of a FlagCycleDistance of zero might be~\citep[16-4]{arm1176jzf-s}: 
+\end{onehalfspace}
+\begin{figure}[H]
+\begin{minted}{gas}
+ADDS R0, R1, R2
+MULEQ R3,R4, R5
+\end{minted}
+\end{figure}
+\begin{onehalfspace}
+Notice the operand ADD is ADDS, the S is an opptional suffix, which is a condition code that asks to update all the ALU status flags in the CPSR. Also notice that the MUL operand has the suffix EQ, this is a conditional code for Equal which uses a Z flag. In contrast the below example has a FlagCycleDictance of one, as there is a single instruction between the two aforementioned instructions:
+\end{onehalfspace}
+\begin{figure}[H]
+\begin{minted}{gas}
+ADDS R0, R1, R2
+MOV R6, R6
+MULEQ R3,R4, R5
+\end{minted}
+\end{figure}
+\subsubsection{Register Interlocks}
+\begin{onehalfspace}
+Interlocks are used to avoid instructions writing to the same register at the same moment and creating a pipeline hazard. The following example takes four cycles~\citep[16-6]{arm1176jzf-s} to complete due to the resultant latency of \textbf{R0}. 
+\end{onehalfspace}
+\begin{figure}[H]
+\begin{minted}{gas}
+LDR R0, [R1]
+ADD R4, R3, R0
+\end{minted}
+\end{figure}
+\begin{onehalfspace}
+However, if the ADD instruction was not waiting on a register from the previous command the instruction sequence would only take two cycles:
+\end{onehalfspace}
+\begin{figure}[H]
+\begin{minted}{gas}
+LDR R0, [R1]
+ADD R4, R3, R2
+
+\end{minted}
+\end{figure}
+\section{A note about the ARM11 design}
+\begin{onehalfspace}
+The ARM design is primarily driven towards low energy consumption. In the past ARM would not have been considered a good solution for mid-sized to large computers such as a web server. The majority of desktop sized computers run on x86 or x86\_64 based processors of one sort or another. The architecture reviewed today is 32-bit and is unlikely to be used in future desktop sized computers, but other ARM based creations are being considered by high-tech companies such as Apple~\citep{apple} and AMD~\citep{amd}. The ARM11 is primarily for smaller hand held devices such as the iPhone, iPad, Linux or Android based phones and Tablets and other smaller devices such as the Raspberry Pi or your Samsung TV. The ARM11 is small enough, energy efficient enough, and designed well enough to run on a small battery for hours. Very few architectures can claim the same capabilities at this time. 
+\end{onehalfspace}
 \clearpage
 \printbibliography
 
 \end{document}
-
-

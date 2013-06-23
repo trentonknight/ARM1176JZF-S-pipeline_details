@@ -1,22 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.6)  22 JUN 2013 17:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.6.6)  22 JUN 2013 16:33
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**JNMansfield-CS440-ARM11-Report.tex
-(./JNMansfield-CS440-ARM11-Report.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
-hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
- czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
-n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
-reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
- sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
-n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
-speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
-lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
-celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
-ai, loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+**\def\tikzexternalrealjob{JNMansfield-CS440-ARM11-Report}\input{JNMansfield-CS
+440-ARM11-Report}
+(./JNMansfield-CS440-ARM11-Report.tex (/usr/share/texlive/texmf-dist/tex/latex/
+base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
@@ -33,8 +22,7 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -44,30 +32,17 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \f@ncyO@erf=\skip49
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
-)
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+) (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count88
-)
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package xcolor Info: Driver file: dvips.def on input line 225.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen103
@@ -79,9 +54,8 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks15
 \minrowclearance=\skip54
 )
-\rownum=\count89
+\rownum=\count88
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -89,25 +63,20 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-)
-(/usr/share/texmf/tex/latex/xcolor/svgnam.def
+) (/usr/share/texmf/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
@@ -257,7 +226,6 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
@@ -288,7 +256,6 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
@@ -312,33 +279,28 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
-
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
-
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -351,7 +313,7 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -367,28 +329,23 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks18
-)
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen105
-\Hy@linkcounter=\count90
-\Hy@pagecounter=\count91
-
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count92
-
+\Hy@SavedSpaceFactor=\count91
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -399,9 +356,9 @@ Package hyperref Info: Plain pages OFF on input line 4077.
 Package hyperref Info: Backreferencing OFF on input line 4082.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4300.
-\c@Hy@tempcnt=\count93
+\c@Hy@tempcnt=\count92
 LaTeX Info: Redefining \url on input line 4653.
-\Fld@menulength=\count94
+\Fld@menulength=\count93
 \Field@Width=\dimen106
 \Fld@charsize=\dimen107
 Package hyperref Info: Hyper figures OFF on input line 5773.
@@ -413,160 +370,144 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5798.
 Package hyperref Info: PDF/A mode OFF on input line 5803.
 LaTeX Info: Redefining \ref on input line 5843.
 LaTeX Info: Redefining \pageref on input line 5847.
-\Hy@abspage=\count95
-\c@Item=\count96
-\c@Hfootnote=\count97
+\Hy@abspage=\count94
+\c@Item=\count95
+\c@Hfootnote=\count96
 )
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Message: Driver (default): hdvips.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
-\Fld@listcount=\count98
-\c@bookmark@seq@number=\count99
-
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2012/05/13 v6.82q Hyperref driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2012/05/13 v6.82q Hyperref definitions for pdfmark specials
+\pdf@docset=\toks19
+\pdf@box=\box26
+\pdf@toks=\toks20
+\pdf@defaulttoks=\toks21
+\Fld@listcount=\count97
+\c@bookmark@seq@number=\count98
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip55
-)
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count100
-\float@exts=\toks19
-\float@box=\box26
-\@float@everytoks=\toks20
-\@floatcapt=\box27
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+\c@float@type=\count99
+\float@exts=\toks22
+\float@box=\box27
+\@float@everytoks=\toks23
+\@floatcapt=\box28
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 )
 \Gin@req@height=\dimen108
 \Gin@req@width=\dimen109
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count101
-\lst@gtempboxa=\box28
-\lst@token=\toks21
-\lst@length=\count102
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count100
+\lst@gtempboxa=\box29
+\lst@token=\toks24
+\lst@length=\count101
 \lst@currlwidth=\dimen110
-\lst@column=\count103
-\lst@pos=\count104
+\lst@column=\count102
+\lst@pos=\count103
 \lst@lostspace=\dimen111
 \lst@width=\dimen112
-\lst@newlines=\count105
-\lst@lineno=\count106
+\lst@newlines=\count104
+\lst@lineno=\count105
 \lst@maxwidth=\dimen113
-
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count107
-\lst@skipnumbers=\count108
-\lst@framebox=\box29
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+\c@lstnumber=\count106
+\lst@skipnumbers=\count107
+\lst@framebox=\box30
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
-
 (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2011/09/17 v1.7 Yet another Pygments shim for LaTeX
-
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count109
+\FV@CodeLineNo=\count108
 \FV@InFile=\read1
-\FV@TabBox=\box30
-\c@FancyVerbLine=\count110
-\FV@StepNumber=\count111
+\FV@TabBox=\box31
+\c@FancyVerbLine=\count109
+\FV@StepNumber=\count110
 \FV@OutFile=\write3
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count112
-\calc@Bcount=\count113
+\calc@Acount=\count111
+\calc@Bcount=\count112
 \calc@Adimen=\dimen114
 \calc@Bdimen=\dimen115
 \calc@Askip=\skip56
 \calc@Bskip=\skip57
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count114
+\calc@Ccount=\count113
 \calc@Cskip=\skip58
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
-
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
 )
-runsystem(uname -s > "JNMansfield-CS440-ARM11-Report.w18")...executed.
+runsystem(uname -s > "JNMansfield-CS440-ARM11-Report-figure3.w18")...executed.
 
-
-(./JNMansfield-CS440-ARM11-Report.w18)
-runsystem(rm -- "JNMansfield-CS440-ARM11-Report.w18")...executed.
+(./JNMansfield-CS440-ARM11-Report-figure3.w18)
+runsystem(rm -- "JNMansfield-CS440-ARM11-Report-figure3.w18")...executed.
 
 )
-\minted@bgbox=\box31
+\minted@bgbox=\box32
 \minted@code=\write4
-\@float@every@listing=\toks22
-\c@listing=\count115
+\@float@every@listing=\toks25
+\c@listing=\count114
 )
-runsystem(which pygmentize && touch JNMansfield-CS440-ARM11-Report.aex)...execu
-ted.
+runsystem(which pygmentize && touch JNMansfield-CS440-ARM11-Report-figure3.aex)
+...executed.
 
-runsystem(rm JNMansfield-CS440-ARM11-Report.aex)...executed.
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.aex)...executed.
 
-runsystem(pygmentize -S tango -f latex > JNMansfield-CS440-ARM11-Report.pyg)...
-executed.
+runsystem(pygmentize -S tango -f latex > JNMansfield-CS440-ARM11-Report-figure3
+.pyg)...executed.
 
- (./JNMansfield-CS440-ARM11-Report.pyg) (./mips.sty) (/usr/share/texmf/tex/late
-x/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks23
-)
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box32
-
+(./JNMansfield-CS440-ARM11-Report-figure3.pyg) (./mips.sty) (/usr/share/texmf/t
+ex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf/tex/latex/pgf/basiclayer/
+pgf.sty (/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf/
+tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+) (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box33
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+)) (/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
 Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
-
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf/tex/la
+tex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf/tex/generic/pgf/systemlayer/pg
+fsys.code.tex
 Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
-
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks24
-\pgfkeys@temptoks=\toks25
-
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks26
+\pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen116
 \pgf@y=\dimen117
@@ -578,56 +519,48 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 \pgf@yc=\dimen123
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count116
-\c@pgf@countb=\count117
-\c@pgf@countc=\count118
-\c@pgf@countd=\count119
-
+\c@pgf@counta=\count115
+\c@pgf@countb=\count116
+\c@pgf@countc=\count117
+\c@pgf@countd=\count118
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
-
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
-
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
-)))
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+Package pgfsys Info: Driver file for pgf: pgfsys-dvips.def on input line 900.
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-dvips.def
+File: pgfsys-dvips.def 2008/04/03  (rcs-revision 1.20)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-postscript.def
+File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
+\pgf@objectcount=\count119
+))) (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
 \pgfsyssoftpath@smallbuffer@items=\count120
 \pgfsyssoftpath@bigbuffer@items=\count121
-)
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+) (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
-
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf/tex/g
+eneric/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf/tex/generic/pgf/math/pgf
+mathutil.code.tex) (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.te
+x
 \pgfmath@dimen=\dimen124
 \pgfmath@count=\count122
-\pgfmath@box=\box33
-\pgfmath@toks=\toks27
-\pgfmath@stack@operand=\toks28
-\pgfmath@stack@operation=\toks29
-)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\pgfmath@box=\box34
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+) (/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/
+texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf/t
+ex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf/
+tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf/tex/ge
+neric/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf/tex/gene
+ric/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf/tex/generic/pgf/
+math/pgfmathfunctions.round.code.tex) (/usr/share/texmf/tex/generic/pgf/math/pg
+fmathfunctions.misc.code.tex))) (/usr/share/texmf/tex/generic/pgf/math/pgfmathf
+loat.code.tex
 \c@pgfmathroundto@lastzeros=\count123
-))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+)) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
 \pgf@picminx=\dimen125
 \pgf@picmaxx=\dimen126
@@ -643,95 +576,72 @@ File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
 \pgf@yy=\dimen136
 \pgf@zx=\dimen137
 \pgf@zy=\dimen138
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
 \pgf@path@lastx=\dimen139
 \pgf@path@lasty=\dimen140
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
 \pgf@shorten@end@additional=\dimen141
 \pgf@shorten@start@additional=\dimen142
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box34
-\pgf@hbox=\box35
-\pgf@layerbox@main=\box36
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
 \pgf@picture@serial@count=\count124
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
 \pgflinewidth=\dimen143
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
 \pgf@pt@x=\dimen144
 \pgf@pt@y=\dimen145
 \pgf@pt@temp=\dimen146
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
 \pgf@max=\dimen147
 \pgf@sys@shading@range@num=\count125
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
-
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box37
-))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+\pgfexternal@startupbox=\box38
+)) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
-)))
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box38
-)
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+\pgfnodeparttextbox=\box39
+) (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
-)
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen148
 \pgf@nodesepend=\dimen149
-)
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+) (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
-))
-(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf/tex/l
+atex/pgf/utilities/pgfkeys.sty (/usr/share/texmf/tex/generic/pgf/utilities/pgfk
+eys.code.tex)) (/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
 \pgffor@iter=\dimen150
 \pgffor@skip=\dimen151
-\pgffor@stack=\toks30
-\pgffor@toks=\toks31
-))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+)) (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
-
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \pgf@plot@mark@count=\count126
@@ -743,13 +653,12 @@ File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \tikz@lastysaved=\dimen156
 \tikzleveldistance=\dimen157
 \tikzsiblingdistance=\dimen158
-\tikz@figbox=\box39
-\tikz@tempbox=\box40
+\tikz@figbox=\box40
+\tikz@tempbox=\box41
 \tikztreelevel=\count127
 \tikznumberofchildren=\count128
 \tikznumberofcurrentchild=\count129
 \tikz@fig@count=\count130
-
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 \pgfmatrixcurrentrow=\count131
@@ -809,26 +718,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 (/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
 ode.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box41
-\pgfnodeparttwobox=\box42
-\pgfnodepartthreebox=\box43
-\pgfnodepartfourbox=\box44
-\pgfnodeparttwentybox=\box45
-\pgfnodepartnineteenbox=\box46
-\pgfnodeparteighteenbox=\box47
-\pgfnodepartseventeenbox=\box48
-\pgfnodepartsixteenbox=\box49
-\pgfnodepartfifteenbox=\box50
-\pgfnodepartfourteenbox=\box51
-\pgfnodepartthirteenbox=\box52
-\pgfnodeparttwelvebox=\box53
-\pgfnodepartelevenbox=\box54
-\pgfnodeparttenbox=\box55
-\pgfnodepartninebox=\box56
-\pgfnodeparteightbox=\box57
-\pgfnodepartsevenbox=\box58
-\pgfnodepartsixbox=\box59
-\pgfnodepartfivebox=\box60
+\pgfnodepartlowerbox=\box42
+\pgfnodeparttwobox=\box43
+\pgfnodepartthreebox=\box44
+\pgfnodepartfourbox=\box45
+\pgfnodeparttwentybox=\box46
+\pgfnodepartnineteenbox=\box47
+\pgfnodeparteighteenbox=\box48
+\pgfnodepartseventeenbox=\box49
+\pgfnodepartsixteenbox=\box50
+\pgfnodepartfifteenbox=\box51
+\pgfnodepartfourteenbox=\box52
+\pgfnodepartthirteenbox=\box53
+\pgfnodeparttwelvebox=\box54
+\pgfnodepartelevenbox=\box55
+\pgfnodeparttenbox=\box56
+\pgfnodepartninebox=\box57
+\pgfnodeparteightbox=\box58
+\pgfnodepartsevenbox=\box59
+\pgfnodepartsixbox=\box60
+\pgfnodepartfivebox=\box61
 )))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshado
 ws.code.tex
@@ -837,14 +746,16 @@ File: tikzlibraryshadows.code.tex 2008/01/13 v2.10 (rcs-revision 1.3)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadin
 gs.code.tex
 File: tikzlibraryfadings.code.tex 2009/11/15 v2.10 (rcs-revision 1.2)
-
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2008/02/07 v2.10 (rcs-revision 1.3)
+
+Package pgf Warning: Your graphic driver pgfsys-dvips.def does not support fadi
+ngs. This warning is given only once on input line 31.
+
 )))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
 s.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
-
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 \arrowsize=\dimen159
@@ -852,8 +763,8 @@ File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackg
 rounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
-\pgf@layerbox@background=\box61
-\pgf@layerboxsaved@background=\box62
+\pgf@layerbox@background=\box62
+\pgf@layerboxsaved@background=\box63
 )
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
 ioning.code.tex
@@ -867,24 +778,21 @@ e.tex
 ed.code.tex
 \tikzexternal@outfile=\write6
 ))
-\openout5 = `JNMansfield-CS440-ARM11-Report.auxlock'.
+No auxiliary output files.
 
- (/usr/share/texmf/tex/latex/biblatex/biblatex.sty
+\w@pgfexternal@auxout=\write7
+(/usr/share/texmf/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2011/11/13 v1.7 programmable bibliographies
-
 (/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count135
 )
 \etb@tempcnta=\count136
-)
-(/usr/share/texmf/tex/latex/logreq/logreq.sty
+) (/usr/share/texmf/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count137
-
 (/usr/share/texmf/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
@@ -932,7 +840,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibparsep=\skip66
 \bibhang=\skip67
 \blx@auxin=\read3
-\blx@auxout=\write7
+\blx@auxout=\write8
 \c@mincomprange=\count172
 \c@maxcomprange=\count173
 \c@mincompwidth=\count174
@@ -1005,13 +913,11 @@ Normal \count register pool exhausted, switching to extended pool.
 \c@savedlistf=\count283
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-
 (/usr/share/texmf/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2011/11/13 v1.7 biblatex generic compatibility
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
 (/usr/share/texmf/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2011/11/13 v1.7 biblatex generic definitions
 \c@biburlnumpenalty=\count284
@@ -1021,29 +927,24 @@ File: biblatex.def 2011/11/13 v1.7 biblatex generic definitions
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
-
 (/usr/share/texmf/tex/latex/biblatex/blx-natbib.def
 File: blx-natbib.def 2011/11/13 v1.7 biblatex natbib compatibility
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.bbx' found.
-
 (/usr/share/texmf/tex/latex/biblatex/bbx/authoryear-comp.bbx
 File: authoryear-comp.bbx 2011/11/13 v1.7 biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
-
 (/usr/share/texmf/tex/latex/biblatex/bbx/authoryear.bbx
 File: authoryear.bbx 2011/11/13 v1.7 biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-
 (/usr/share/texmf/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2011/11/13 v1.7 biblatex bibliography style
 )))
 Package biblatex Info: Trying to load citation style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.cbx' found.
-
 (/usr/share/texmf/tex/latex/biblatex/cbx/authoryear-comp.cbx
 File: authoryear-comp.cbx 2011/11/13 v1.7 biblatex citation style
 Package biblatex Info: Redefining '\cite'.
@@ -1061,34 +962,28 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-
 (/usr/share/texmf/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-))
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box63
+\ttl@box=\box64
 \beforetitleunit=\skip68
 \aftertitleunit=\skip69
 \ttl@plus=\dimen160
 \ttl@minus=\dimen161
-\ttl@toksa=\toks32
+\ttl@toksa=\toks35
 \titlewidth=\dimen162
 \titlewidthlast=\dimen163
 \titlewidthfirst=\dimen164
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
 (/usr/share/texmf/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2011/11/13 v1.7 biblatex localization
 )
 \@quotelevel=\count288
 \@quotereset=\count289
-
-(./JNMansfield-CS440-ARM11-Report.aux)
-\openout1 = `JNMansfield-CS440-ARM11-Report.aux'.
-
+No file JNMansfield-CS440-ARM11-Report-figure3.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
@@ -1103,66 +998,26 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen165
-\scratchbox=\box64
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen166
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks34
-)
 \AtBeginShipoutBox=\box65
 Package hyperref Info: Link coloring OFF on input line 84.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
-
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count296
+\c@section@level=\count290
 )
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
 LaTeX Info: Redefining \nameref on input line 84.
 
-(./JNMansfield-CS440-ARM11-Report.out) (./JNMansfield-CS440-ARM11-Report.out)
-\@outlinefile=\write8
-\openout8 = `JNMansfield-CS440-ARM11-Report.out'.
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-)
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-\c@lstlisting=\count297
-
+\c@lstlisting=\count291
 ABD: EveryShipout initializing macros
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout7 = `JNMansfield-CS440-ARM11-Report.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'JNMansfield-CS440-ARM11-Report.bbl' found.
- (./JNMansfield-CS440-ARM11-Report.bbl)
 Package biblatex Info: Reference section=0 on input line 84.
 Package biblatex Info: Reference segment=0 on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1172,261 +1027,352 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 96.
 
-[1
+LaTeX Warning: Citation 'levy2005history' on page 2 undefined on input line 110
+.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./JNMansfield-CS440-ARM11-Report.toc)
-\tf@toc=\write9
-\openout9 = `JNMansfield-CS440-ARM11-Report.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.107 \clearpage
-                 [1
+LaTeX Warning: Citation 'kamath2001system' on page 2 undefined on input line 11
+0.
 
-]
+
+LaTeX Warning: Citation 'referenceB' on page 2 undefined on input line 120.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 124.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 124.
 
-[2
+LaTeX Warning: Citation 'referenceB' on page 2 undefined on input line 129.
 
-] [3] [4pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.0.1}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.207 \end{onehalfspace}
-                        pdfTeX warning (ext4): destination with the same identi
-fier (name{figure.0.2}) has been already used, duplicate ignored
+LaTeX Warning: Citation 'ARM1176' on page 3 undefined on input line 138.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.207 \end{onehalfspace}
-                        ] [5pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.0.3}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.248 \end{onehalfspace}
-                        pdfTeX warning (ext4): destination with the same identi
-fier (name{figure.0.4}) has been already used, duplicate ignored
+LaTeX Warning: Citation 'arm1176jzf-s' on page 3 undefined on input line 148.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.248 \end{onehalfspace}
-                        ] [6pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.0.5}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.283 \subsubsection{The MOV Instruction}
-                                         pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.0.6}) has been already used, duplicate ignor
-ed
+LaTeX Warning: Citation 'A32' on page 4 undefined on input line 204.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.283 \subsubsection{The MOV Instruction}
-                                         ]
-Underfull \hbox (badness 10000) in paragraph at lines 308--315
-[][]
- []
 
-\openout3 = `JNMansfield-CS440-ARM11-Report.pyg'.
+LaTeX Warning: Citation 'A32' on page 4 undefined on input line 206.
+
+
+LaTeX Warning: Citation 'referenceB' on page 4 undefined on input line 206.
+
+
+LaTeX Warning: Citation 'referenceB' on page 5 undefined on input line 224.
+
+
+LaTeX Warning: Citation 'referenceB' on page 5 undefined on input line 247.
+
+
+LaTeX Warning: Citation 'referenceB' on page 6 undefined on input line 265.
+
+
+LaTeX Warning: Citation 'referenceB' on page 6 undefined on input line 281.
+
+
+LaTeX Warning: Citation 'referenceB' on page 7 undefined on input line 302.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
 
 runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
- " -o JNMansfield-CS440-ARM11-Report.out.pyg JNMansfield-CS440-ARM11-Report.pyg
-)...executed.
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
 
-(./JNMansfield-CS440-ARM11-Report.out.pyg
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
 )
-runsystem(rm JNMansfield-CS440-ARM11-Report.out.pyg)...executed.
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
 
-runsystem(rm JNMansfield-CS440-ARM11-Report.pyg)...executed.
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
 
-\openout3 = `JNMansfield-CS440-ARM11-Report.pyg'.
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
 
 runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
- " -o JNMansfield-CS440-ARM11-Report.out.pyg JNMansfield-CS440-ARM11-Report.pyg
-)...executed.
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
 
 
-(./JNMansfield-CS440-ARM11-Report.out.pyg)
-runsystem(rm JNMansfield-CS440-ARM11-Report.out.pyg)...executed.
+LaTeX Warning: Citation 'arm1176jzf-s' on page 8 undefined on input line 374.
 
-runsystem(rm JNMansfield-CS440-ARM11-Report.pyg)...executed.
 
- [7pdfTeX warning (ext4): destination with the same identifier (name{figure.0.7
-}) has been already used, duplicate ignored
+LaTeX Warning: Citation 'arm1176jzf-s' on page 8 undefined on input line 378.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.367 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-0.8}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.367 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-0.10}) has been already used, duplicate ignored
+Overfull \hbox (22.93716pt too wide) in paragraph at lines 378--379
+\OT1/cmr/m/n/10.95 ture. This ar-chi-tec-ture han-dles the fol-low-ing crit-i-c
+al items ([]): 
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.367 
-      ] [8pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.0.9}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.379 \begin{itemize}
-                     pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.0.11}) has been already used, duplicate ignored
+LaTeX Warning: Citation 'arm1176jzf-s' on page 9 undefined on input line 391.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.379 \begin{itemize}
-                     ]
+
 Overfull \hbox (6.38338pt too wide) in paragraph at lines 391--392
 []\OT1/cmr/m/n/10.95 The load-store pipeline de-cou-ples loads and stores
  []
 
 
-Overfull \hbox (26.80708pt too wide) in paragraph at lines 395--396
-\OT1/cmr/m/n/10.95 with the ARM1176JZF-S to han-dle ARM co-pro-ces-sor in-struc
--tions ([][]\OT1/cmr/m/it/10.95 ddi0301h[]
+LaTeX Warning: Citation 'arm1176jzf-s' on page 9 undefined on input line 392.
+
+
+Overfull \hbox (22.06407pt too wide) in paragraph at lines 392--393
+\OT1/cmr/m/n/10.95 mem-ory and in-struc-tion TCM to pre-dict branch out-comes (
+[]). 
  []
 
-[9]
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 9 undefined on input line 393.
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 9 undefined on input line 394.
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 9 undefined on input line 395.
+
+
+Overfull \hbox (60.17499pt too wide) in paragraph at lines 395--396
+\OT1/cmr/m/n/10.95 with the ARM1176JZF-S to han-dle ARM co-pro-ces-sor in-struc
+-tions ([]). 
+ []
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 9 undefined on input line 396.
+
+
 Overfull \hbox (9.60374pt too wide) in paragraph at lines 402--403
 []\OT1/cmr/m/n/10.95 Allows han-dling of cy-cle tim-
  []
 
 
-Overfull \hbox (22.74974pt too wide) in paragraph at lines 404--405
+LaTeX Warning: Citation 'arm1176jzf-s' on page 10 undefined on input line 403.
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 10 undefined on input line 404.
+
+
+Overfull \hbox (56.11765pt too wide) in paragraph at lines 404--405
 []\OT1/cmr/m/n/10.95 Controls the mem-ory sys-tem and other func-tion-al-ity ([
-][]\OT1/cmr/m/it/10.95 ddi0301h[]
+]). 
  []
 
-===== 'mode=convert with system call': Invoking 'latex -shell-escape -halt-on-e
-rror -interaction=batchmode -jobname "JNMansfield-CS440-ARM11-Report-figure0" "
-\def\tikzexternalrealjob{JNMansfield-CS440-ARM11-Report}\input{JNMansfield-CS44
-0-ARM11-Report}"; dvips -o "JNMansfield-CS440-ARM11-Report-figure0".ps "JNMansf
-ield-CS440-ARM11-Report-figure0".dvi; ps2eps "JNMansfield-CS440-ARM11-Report-fi
-gure0.ps"' ========
-\openout5 = `JNMansfield-CS440-ARM11-Report.auxlock'.
 
-runsystem(latex -shell-escape -halt-on-error -interaction=batchmode -jobname "J
-NMansfield-CS440-ARM11-Report-figure0" "\def\tikzexternalrealjob{JNMansfield-CS
-440-ARM11-Report}\input{JNMansfield-CS440-ARM11-Report}"; dvips -o "JNMansfield
--CS440-ARM11-Report-figure0".ps "JNMansfield-CS440-ARM11-Report-figure0".dvi; p
-s2eps "JNMansfield-CS440-ARM11-Report-figure0.ps")...executed.
+LaTeX Warning: Citation 'arm1176jzf-s' on page 10 undefined on input line 405.
 
-\openout5 = `JNMansfield-CS440-ARM11-Report.auxlock'.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 11 undefined on input line 509.
 
 
-! Package tikz Error: Sorry, the system call 'latex -shell-escape -halt-on-erro
-r -interaction=batchmode -jobname "JNMansfield-CS440-ARM11-Report-figure0" "\de
-f\tikzexternalrealjob{JNMansfield-CS440-ARM11-Report}\input{JNMansfield-CS440-A
-RM11-Report}"; dvips -o "JNMansfield-CS440-ARM11-Report-figure0".ps "JNMansfiel
-d-CS440-ARM11-Report-figure0".dvi; ps2eps "JNMansfield-CS440-ARM11-Report-figur
-e0.ps"' did NOT result in a usable output file 'JNMansfield-CS440-ARM11-Report-
-figure0' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have e
-nabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes 
-it is also named 'write 18' or something like that. Or maybe the command simply
- failed? Error messages can be found in 'JNMansfield-CS440-ARM11-Report-figure0
-.log'. If you continue now, I'll try to typeset the picture.
+LaTeX Warning: Citation 'arm1176jzf-s' on page 11 undefined on input line 511.
 
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.502 \end{tikzpicture}
-                       
-? X
- 
+
+LaTeX Warning: Citation 'arm7' on page 11 undefined on input line 511.
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 11 undefined on input line 522.
+
+
+LaTeX Warning: Citation 'arm7' on page 12 undefined on input line 526.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gdb -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 13 undefined on input line 576.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Citation 'davespace' on page 14 undefined on input line 641.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l trac-wiki -f latex -F tokenmerge             -P "verbop
+tions= " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-AR
+M11-Report-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gdb -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 15 undefined on input line 752.
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 15 undefined on input line 752.
+
+\openout7 = `JNMansfield-CS440-ARM11-Report-figure3.dpth'.
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 773--773
+ [][][]\OT1/cmr/m/n/8 common de-code pipeline 
+ []
+
+\HyPL@Entry{0<</S/D /St 16>>}
+[16
+
+
+
+
+]
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 16 undefined on input line 841.
+
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 16 undefined on input line 1026.
+
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 17 undefined on input line 1038.
+
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 17 undefined on input line 1044.
+
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+
+LaTeX Warning: Citation 'arm1176jzf-s' on page 18 undefined on input line 1064.
+
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+\openout3 = `JNMansfield-CS440-ARM11-Report-figure3.pyg'.
+
+runsystem(pygmentize -l gas -f latex -F tokenmerge             -P "verboptions=
+ " -o JNMansfield-CS440-ARM11-Report-figure3.out.pyg JNMansfield-CS440-ARM11-Re
+port-figure3.pyg)...executed.
+
+(./JNMansfield-CS440-ARM11-Report-figure3.out.pyg)
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.out.pyg)...executed.
+
+runsystem(rm JNMansfield-CS440-ARM11-Report-figure3.pyg)...executed.
+
+
+LaTeX Warning: Citation 'apple' on page 18 undefined on input line 1084.
+
+
+LaTeX Warning: Citation 'amd' on page 18 undefined on input line 1084.
+
+
+LaTeX Warning: Empty bibliography on input line 1087.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1089.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1089.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1089.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1089.
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                JNMansfield-CS440-ARM11-Report-figure3
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'JNMansfield-CS440-ARM11-Report-figure
+3.run.xml'.
+\openout1 = `JNMansfield-CS440-ARM11-Report-figure3.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1089.
+ ) 
 Here is how much of TeX's memory you used:
- 23522 strings out of 493485
- 433925 string characters out of 3143527
- 681654 words of memory out of 3000000
- 26344 multiletter control sequences out of 15000+200000
+ 23185 strings out of 493486
+ 428615 string characters out of 3143550
+ 690640 words of memory out of 3000000
+ 26069 multiletter control sequences out of 15000+200000
  11023 words of font info for 39 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,11n,69p,956b,1060s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{cite.0@A32} has been referenced but does not exist,
- replaced by a fixed one
+ 57i,11n,69p,1094b,918s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-pdfTeX warning (dest): name{cite.0@arm1176jzf-s} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@ARM1176} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@referenceB} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@kamath2001system} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@levy2005history} has been referenced but doe
-s not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.0.5.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.0.5.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.0.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.0.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.0.4.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.0.4.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.0.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.4} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on JNMansfield-CS440-ARM11-Report.pdf (10 pages, 181136 bytes).
-PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
- 257 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Output written on JNMansfield-CS440-ARM11-Report-figure3.dvi (1 page, 69284 byt
+es).

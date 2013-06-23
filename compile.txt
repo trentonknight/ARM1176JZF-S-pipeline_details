@@ -1,0 +1,2 @@
+pdflatex -shell-escape JNMansfield-CS440-ARM11-Report.tex 
+

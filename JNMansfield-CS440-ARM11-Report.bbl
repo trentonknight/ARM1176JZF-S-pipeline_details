@@ -32,19 +32,6 @@
     \endverb
   \endentry
 
-  \entry{referenceB}{misc}{}
-    \list{organization}{1}{%
-      {ARM Limited}%
-    }
-    \field{sortinit}{A}
-    \field{labelyear}{2011}
-    \field{title}{ARM Architecture Reference Manual ARMv7-A and ARMv7-R edition}
-    \field{year}{2011}
-    \verb{url}
-    \verb http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0406b/index.html
-    \endverb
-  \endentry
-
   \entry{arm1176jzf-s}{misc}{}
     \list{organization}{1}{%
       {ARM Limited}%
@@ -56,6 +43,54 @@
     \field{year}{2009}
     \verb{url}
     \verb http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0301h/index.html
+    \endverb
+  \endentry
+
+  \entry{referenceB}{misc}{}
+    \list{organization}{1}{%
+      {ARM Limited}%
+    }
+    \field{sortinit}{d}
+    \field{labelyear}{2011}
+    \field{note}{ARM Architecture Reference Manual ARMv7-A and ARMv7-R edition}
+    \field{title}{ddi0406b}
+    \field{year}{2011}
+    \verb{url}
+    \verb http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0406b/index.html
+    \endverb
+  \endentry
+
+  \entry{arm7}{misc}{}
+    \list{organization}{1}{%
+      {ARM Limited}%
+    }
+    \field{sortinit}{d}
+    \field{labelyear}{2012}
+    \field{note}{ARM Architecture Reference Manual ARMv7-A and ARMv7-R edition}
+    \field{title}{ddi0406b}
+    \field{year}{2012}
+    \verb{url}
+    \verb http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0406b/index.html
+    \endverb
+  \endentry
+
+  \entry{apple}{misc}{}
+    \name{labelname}{1}{}{%
+      {{uniquename=0,hash=ccb394c239d3cc6d16c2baf88b944b69}{Duncan}{D\bibinitperiod}{Geoff}{G\bibinitperiod}{}{}{}{}}%
+    }
+    \name{author}{1}{}{%
+      {{uniquename=0,hash=ccb394c239d3cc6d16c2baf88b944b69}{Duncan}{D\bibinitperiod}{Geoff}{G\bibinitperiod}{}{}{}{}}%
+    }
+    \strng{namehash}{ccb394c239d3cc6d16c2baf88b944b69}
+    \strng{fullhash}{ccb394c239d3cc6d16c2baf88b944b69}
+    \field{sortinit}{D}
+    \field{labelyear}{2012}
+    \field{day}{9}
+    \field{month}{11}
+    \field{title}{Why would Apple move Macs to ARM processors?}
+    \field{year}{2012}
+    \verb{url}
+    \verb http://www.digitaltrends.com/computing/why-might-apple-move-macs-to-arm-processors/
     \endverb
   \endentry
 
@@ -97,6 +132,26 @@
     \field{year}{2005}
   \endentry
 
+  \entry{amd}{misc}{}
+    \name{labelname}{1}{}{%
+      {{uniquename=0,hash=fce75cb2147c7338ad732d37eb254032}{Shah}{S\bibinitperiod}{Agam}{A\bibinitperiod}{}{}{}{}}%
+    }
+    \name{author}{1}{}{%
+      {{uniquename=0,hash=fce75cb2147c7338ad732d37eb254032}{Shah}{S\bibinitperiod}{Agam}{A\bibinitperiod}{}{}{}{}}%
+    }
+    \strng{namehash}{fce75cb2147c7338ad732d37eb254032}
+    \strng{fullhash}{fce75cb2147c7338ad732d37eb254032}
+    \field{sortinit}{S}
+    \field{labelyear}{2013}
+    \field{day}{18}
+    \field{month}{06}
+    \field{title}{AMD reboots server strategy with first ARM chips}
+    \field{year}{2013}
+    \verb{url}
+    \verb http://www.infoworld.com/d/computer-hardware/amd-reboots-server-strategy-first-arm-chips-220919
+    \endverb
+  \endentry
+
   \entry{ARM1176}{misc}{}
     \list{organization}{1}{%
       {ARM Limited}%
@@ -107,6 +162,26 @@
     \field{year}{2013}
     \verb{url}
     \verb http://www.arm.com/products/processors/classic/arm11/arm1176.php
+    \endverb
+  \endentry
+
+  \entry{davespace}{misc}{}
+    \name{labelname}{1}{}{%
+      {{uniquename=0,hash=b5eb4ac16368112932ff36772cb0b0b5}{Thomas}{T\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+    }
+    \name{author}{1}{}{%
+      {{uniquename=0,hash=b5eb4ac16368112932ff36772cb0b0b5}{Thomas}{T\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+    }
+    \strng{namehash}{b5eb4ac16368112932ff36772cb0b0b5}
+    \strng{fullhash}{b5eb4ac16368112932ff36772cb0b0b5}
+    \field{sortinit}{T}
+    \field{labelyear}{2012}
+    \field{day}{13}
+    \field{month}{07}
+    \field{title}{Introduction to ARM}
+    \field{year}{2012}
+    \verb{url}
+    \verb http://www.davespace.co.uk/arm/introduction-to-arm/instruction-sets.html
     \endverb
   \endentry
 
