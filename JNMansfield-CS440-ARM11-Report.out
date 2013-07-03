@@ -8,3 +8,13 @@
 \BOOKMARK [2][-]{subsection.0.2.5}{Syntax for using the branch and mov instructions}{section.0.2}% 8
 \BOOKMARK [1][-]{section.0.3}{The main components of the ARM1176JZF-S}{}% 9
 \BOOKMARK [2][-]{subsection.0.3.1}{List of components}{section.0.3}% 10
+\BOOKMARK [1][-]{section.0.4}{ARM1176JZF-S pipeline stages}{}% 11
+\BOOKMARK [2][-]{subsection.0.4.1}{The Common Decode Pipeline}{section.0.4}% 12
+\BOOKMARK [2][-]{subsection.0.4.2}{Fetch stages 1 and 2}{section.0.4}% 13
+\BOOKMARK [2][-]{subsection.0.4.3}{Instruction Issue and Decode}{section.0.4}% 14
+\BOOKMARK [1][-]{section.0.5}{Instruction Execution Pipeline }{}% 15
+\BOOKMARK [2][-]{subsection.0.5.1}{The Shift, ALU and Sat pipeline}{section.0.5}% 16
+\BOOKMARK [2][-]{subsection.0.5.2}{Multiply pipeline}{section.0.5}% 17
+\BOOKMARK [2][-]{subsection.0.5.3}{The Load/Store pipeline}{section.0.5}% 18
+\BOOKMARK [2][-]{subsection.0.5.4}{Cycle Timing and Instruction Execution}{section.0.5}% 19
+\BOOKMARK [1][-]{section.0.6}{A note about the ARM11 design}{}% 20

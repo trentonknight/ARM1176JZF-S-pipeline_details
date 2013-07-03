@@ -1,0 +1,67 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.1}In the beginning there was Acorn}{2}{section.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.1.1}The need for a smaller silicon area}{2}{subsection.0.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.2}The Instruction Set Architecture}{3}{section.0.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.1}state switching}{3}{subsection.0.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.2}Conditionalised}{4}{subsection.0.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.3}Conditional codes}{4}{subsection.0.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.4}A32}{4}{subsection.0.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ Instruction length and format}{5}{subsection.0.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{General Instruction Categories}{5}{figure.0.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The Branch Instruction}{6}{figure.0.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{The MOV Instruction}{7}{figure.0.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.2.5}Syntax for using the branch and mov instructions}{7}{subsection.0.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.3}The main components of the ARM1176JZF-S}{8}{section.0.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.3.1}List of components}{9}{subsection.0.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.4}ARM1176JZF-S pipeline stages}{10}{section.0.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.1}The Common Decode Pipeline}{10}{subsection.0.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.2}Fetch stages 1 and 2}{11}{subsection.0.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{branch prediction}{11}{subsection.0.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{instruction fetch}{11}{subsection.0.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.3}Instruction Issue and Decode}{12}{subsection.0.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{the coprocessor and the cores relationship}{12}{subsection.0.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.5}Instruction Execution Pipeline }{12}{section.0.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.1}The Shift, ALU and Sat pipeline}{14}{subsection.0.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Shift}{15}{figure.0.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ALU}{16}{figure.0.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Sat}{16}{figure.0.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{WBex}{16}{figure.0.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.2}Multiply pipeline}{17}{subsection.0.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.3}The Load/Store pipeline}{18}{subsection.0.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.4}Cycle Timing and Instruction Execution}{20}{subsection.0.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Use of Flags and Condition codes}{21}{subsection.0.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Register Interlocks}{22}{subsection.0.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.6}A note about the ARM11 design}{22}{section.0.6}

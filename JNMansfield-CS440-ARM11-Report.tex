@@ -63,14 +63,6 @@
   tabsize=2,                       % sets default tabsize to 2 spaces
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
-%begining external
-\usetikzlibrary{external}
-\tikzset{external/system call={latex \tikzexternalcheckshellescape -halt-on-error
--interaction=batchmode -jobname "\image" "\texsource";
-dvips -o "\image".ps "\image".dvi;
-ps2eps "\image.ps"}}
-\tikzexternalize
-%end external
 
 \usepackage[backend=biber,
 style=authoryear-comp,
